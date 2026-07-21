@@ -1,5 +1,5 @@
 {
-    "name": "webpack-template",
+    "name": "odin-template-repository",
     "version": "1.0.0",
     "description": "Reusable Webpack template for JavaScript projects.",
     "private": true,
