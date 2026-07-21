@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRJCTS</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">PRJCTS</h1>
+    </header>
+    <aside>
+        <div id="project-container">
+            <input type="text" title="new-project" placeholder="New project" id="new-project" class="hidden">
+        </div>
+        <button type="button" id="add-project">Add Project</button>
+    </aside>
+    <main>
+        <div id="main-header">
+            <p id="displayed-project"></p>
+            <input type="text" title="display-input" id="display-input" class="hidden">
+            <div id="main-header-buttons">
+                <button type="button" id="add-todo">+</button>
+                <button type="button" id="more-button">•••</button>
+            </div>
+        </div>
+        <div id="todo-container">
+            <div id="new-todo" class="hidden">
+                <label for="new-input" class="custom-check"></label>
+                <input type="text" title="todo-input" placeholder="New Todo" id="todo-input">
+            </div>
+        </div>
+    </main>
+    <dialog id="todo-dialog" closedby="any">
+        <form id="todo-form" action="" method="post">
+            <div id="dialog-header">
+                <p id="details">Details</p>
+                <button type="button" id="delete-todo">
+            </div>
+            <div id="dialog-text">
+                <div>
+                    <label for="title-input">Title</label>
+                    <input type="text" id="title-input" name="title">
+                </div>
+                <div>
+                    <label for="note-input">Notes</label>
+                    <input type="text" id="note-input" name="notes">
+                </div>
+            </div>
+            <div id="date">
+                <p>Date</p>
+                <input type="date" id="due-date" name="date">
+            </div>
+            <div id="optional">
+                <div id="priority-level">
+                    <label for="dialog-priority">Priority</label>
+                    <select name="priority" id="dialog-priority">
+                        <option value="" selected>—</option>
+                        <option value="0">Low</option>
+                        <option value="1">Medium</option>
+                        <option value="2">High</option>
+                    </select>
+                </div>
+                <div id="energy-level">
+                    <label for="dialog-energy">Energy Level</label>
+                    <select name="energy" id="dialog-energy">
+                        <option value="" selected>—</option>
+                        <option value="1">Level 1</option>
+                        <option value="2">Level 2</option>
+                        <option value="3">Level 3</option>
+                        <option value="4">Level 4</option>
+                        <option value="5">Level 5</option>
+                    </select>
+                </div>
+            </div>
+            <div id="subtask-container">
+                <div id="subtask-header">
+                    <p id="subtask-heading">Subtasks</p>
+                    <button type="button" id="add-subtask">+</button>
+                </div>
+                <div id="sub-list">
+                </div>
+                <div id="new-subtask" class="hidden">
+                    <label for="subtask-input" class="custom-check"></label>
+                    <input type="text" title="subtask-input" placeholder="New Subtask" id="subtask-input">
+                </div>
+            </div>
+            <div id="button-container">
+                <button type="button" id="save-button" value="default" disabled>Save</button>
+                <button type="button" id="cancel-button" value="cancel">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+
+</html>
