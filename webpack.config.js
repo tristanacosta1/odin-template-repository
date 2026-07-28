@@ -29,7 +29,17 @@ export default {
                 use: ["html-loader"],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.svg$/i,
+                resourceQuery: /raw/,
+                use: "raw-loader",
+            },
+            {
+                test: /\.svg$/i,
+                resourceQuery: { not: [/raw/] },
+                type: "asset/resource",
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
             },
             {
