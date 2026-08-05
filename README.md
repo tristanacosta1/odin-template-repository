@@ -25,8 +25,37 @@ A brief description of what this project does and its purpose.
 
 ## Installation
 
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/) (npm is included)
+
+---
+
+### Getting Started
+
 1. Clone the repository:
 
 ```bash
 git clone <repository-url>
+```
+
+2. Enter the repository:
+
+```bash
+cd <repository-name>
+```
+
+3. Install project dependencies:
+
+```bash
+npm install
+```
+
+4. Launch the development server:
+
+```bash
+npm start
 ```
